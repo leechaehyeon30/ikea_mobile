@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/mobail_signpage.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="main_top">
+            <header>
+                <a href="index.html">
+                    <img style="width: 20px; transform: rotate(180deg);" src="img/icon/Arrow 1.png" alt="뒤로가기">
+                </a>
+            </header>
+            <h1><span style="color: #0058AB;">IKEA Family</span> 멤버 가입</h1>
+            <span class="sub_h1">
+                <span>이미 가입하셨나요?</span> 
+                <a style="text-decoration: underline;" href="#">로그인하기</a>
+            </span>
+            <div class="signimg9"></div>
+        </div>
+        <div class="main_right">
+            <span class="ques_sign">
+                <span>IKEA Family에 가입하시겠어요? <a style="text-decoration: underline;" href="#">IKEA Family 혜택</a></span>
+            </span>
+            
+            <strong>카카오로 빠르게 가입하세요!</strong>
+            <p class="kakao_sign">IKEA Family 계정을 카카오 계정과 연동해보세요.</p>
+            <button onclick="alert('카카오로 시작하기를 클릭하셨습니다.')" class="kakaobtn">
+                <img style="width: 22px; float: left; margin-right: 15px;" src="img/signpage/kakaoicon.png" alt="">
+                <span>카카오로 시작하기</span>
+            </button>
+            <form>
+                성 <br>
+                <input type="text" name="name">
+                <br>
+                이름 <br>
+                <input type="text" name="name">
+                <br>
+                생일 <br>
+                <input type="date" id="date" max="2024-01-01" min="1900-01-01"> <br>
+                YYYY-MM-DD
+                <br>
+                휴대폰 <br>
+                <input type="tel" id="tel" value="KR (+82)">
+                <br>
+                <label for="성별">성별</label> <br>
+                <select name="성별" id="">
+                    <option value="">  </option>
+                    <option value="">남성</option>
+                    <option value="">여성</option>
+                    <option value="">응답거부</option>
+                </select> <br>
+
+                <input class="postbtn" type="button" value="우편번호 찾기" onclick="alert('우편번호 찾기를 클릭하셨습니다.')">
+                <br>       
+                도로명 주소 <br>
+                <input type="textarea" name="" id=""> 
+                <br>
+                상세 주소 <br>
+                <input type="textarea" name="" id="">
+                <br>
+                선호하는 매장 <br>
+                <select name="store" id="">
+                    <option value="광명점"> </option>
+                    <option value="광명점">고양점</option>
+                    <option value="광명점">광명점</option>
+                    <option value="광명점">기흥점</option>
+                    <option value="광명점">동부산점</option>
+                </select>
+                <br>
+                이메일 <br>
+                <input type="email" name="" id="">
+                <br>
+                비밀번호<br>
+                <input type="password" name="" id="">
+                <p>비밀번호에 다음 내용이 포함되어 있는지 확인하세요.</p>
+                <ul>
+                    <li>최소 8자 이상</li>
+                    <li>대문자 1자</li>
+                    <li>소문자 1자</li>
+                    <li>하나 이상의 숫자 또는 특수 문자</li>
+                    <li>한 줄에 두 개 이상의 문자를 반복할 수 없습니다.</li>
+                </ul>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="subscription" id="subscription">
+                    <label for="subscription">나의 프로필, 관심사 그리고 구매 이력에 따라 맞춰진 IKEA의 홈퍼니싱 <br>아이디어와 신상품 소식, 그리고 할인 혜택 정보를 받고 싶어요!</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="email-subscription" id="email-subscription">
+                    <label for="email-subscription">이메일 수신</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="massage-subscription" id="massage-subscription">
+                    <label for="massage-subscription">문자 수신</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="post-subscription" id="post-subscription">
+                    <label for="post-subscription">우편물 수신</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="Terms-of-Use" id="Terms-of-Use">
+                    <label for="Terms-of-Use">(필수) 약관을 모두 읽고 동의합니다. 
+                        <span style="text-decoration: underline;">이용약관</span></label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="Personal-information" id="Personal-information">
+                    <label for="Personal-information">(필수) 개인정보 수집ㆍ이용에 동의합니다.<span style="text-decoration: underline;">개인정보 수집ㆍ이용 동의</span></label>
+                </div>
+                <input onclick="alert('이메일 주소 확인 하기를 클릭하셨습니다.')" class="emailbtn" type="button" value="이메일 주소 확인 하기">
+                
+            </form>
+        </div>
+        <p class="mini_footer">IKEA.kr·<span>쿠키정책</span>. <span>개인정보처리방침</span> 
+        <br>ⓒ Inter IKEA Systems B.V. 1999-2024</p>
+
+    </div>
+</body>
+</html>
